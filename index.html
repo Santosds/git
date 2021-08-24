@@ -39,15 +39,13 @@
                 <h5>Front-End Developer</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fas fa-sort-down"></i> 
+            <div onclick="displayAbout()"id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i> 
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
-                    Meu nome é Antonio, mas pode me chamar de Santos. Minha jornada na tecnologia começou quando eu ainda era um adolescente, não tinha
-                    muitos recursos para aprimorar meus conhecimentos, por tanto, não avancei muito, o máximo que aprendi foi a utilizar alguns comandos
-                    básicos do DOS.
+                    Meu nome é Antonio, mas pode me chamar de Santos. Hoje vamos dar um passo em direção ao seu futuro.
                 </p>
             </div>
 
@@ -64,5 +62,14 @@
         </section>
     </main>
     
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
